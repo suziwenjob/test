@@ -14,3 +14,9 @@ ssss不是乱写的啊
 ssdfw
 真的`
 suziwen
+
+
+
+测试stashing
+:wq
+
