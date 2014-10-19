@@ -1,51 +1,48 @@
-test
-====
 
-test
+### 语法相关
+ &nbsp; | github版| desktop版| web版
+------------- | -------------| -------------| -------------
+toc目录  | y| y| y
+表格  | y| y| y
+历史版本  | y| y| y
+gfw  | y| y| y
+代码高亮  | y| y| y
+脚注  | y| y| y
+mathjax公式  | y| y| y
+流程图  | n| y| y
+序列图  | n| y| y
+
+### 功能相关
+ &nbsp; | github版| desktop版| web版
+------------- | -------------| -------------| -------------
+实时预览  | y| y| y
+历史版本  | y| y| y
+多种主题  | y| y| y
+自定义css样式  | y| y| y
+全屏写作  | y| y| y
+vim快捷键  | y| y| y
+html导出  | y| y| y
+markdown导出  | y| y| y
+图片保存  | n| y| y
+图片复制粘贴  | n| n| y
+图片缓存  | y| y| y
+流程图自动转换成图片  | n| y| y
+序列图自动转换成图片  | n| y| y
+公式自动转换成图片  | n| n| y
+word导出  | n| n| y
 
 
+###第三方扩展
 
-<!DOCTYPE html>
+ &nbsp; | github版| desktop版| web版
+------------- | -------------| -------------| -------------
+支持evernote  | y| y| y
+支持印象笔记  | y| y| y
+html转换成markdown导出  | y| y| y
+markdown导入  | y| y| y
+markdown转换成html导入  | y| y| y
 
-<html>  
-<head>  
-<title> Real time multi-player games with HTML5</title>  
-<style type="text/css">  
-html , body {  
-background: #212121;  
-color: #fff;  
-margin: 0;  
-padding: 0;  
-}  
-#canvas {  
-position: absolute;  
-left: 0; right: 0; top: 0; bottom: 0;  
-margin: auto;  
-}  
-</style>  
-  
-<!-- Notice the URL, this is handled by socket.io on the server automatically, via express -->  
-<script type="text/javascript" src="/socket.io/socket.io.js"></script>  
-  
-<!-- This will create a connection to socket.io, and print the user serverid that we sent from the server side. -->  
-<script type="text/javascript">  
-  
-//This is all that needs  
-var socket = io.connect('/');  
-  
-//Now we can listen for that event  
-socket.on('onconnected', function( data ) {  
-  
-//Note that the data is the object we sent from the server, as is. So we can assume its id exists.  
-console.log( 'Connected successfully to the socket.io server. My server side ID is ' + data.id );  
-  
-});  
-  
-</script>  
-  
-</head>  
-  
-<body>  
-<canvas id="canvas"> </canvas>  
-</body>  
-</html> 
+注
+
+自动转换成图片
+: 这里指的是当文件导出时，自动转换成图片，比如evernote的保存，word的导出等
